@@ -2,7 +2,7 @@ export class EditProfile {
   username: string;
   first_name: string;
   last_name: string;
-  middle_name: string;
+  email: string;
   phone: string;
   bio: string;
   github: string;
@@ -13,7 +13,6 @@ export class EditProfile {
 
 export class Profile extends EditProfile{
   avatar: string;
-  email: string;
   date_joined: string;
   first_login: string;
 }

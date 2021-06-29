@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   url: 'http://socialnetwork.std-946.ist.mospolytech.ru'
+  // url: 'http://127.0.0.1:8000'
 };
 
 /*

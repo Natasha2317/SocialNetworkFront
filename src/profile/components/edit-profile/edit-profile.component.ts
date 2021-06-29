@@ -18,10 +18,10 @@ export class EditProfileComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.form = this.fb.group({
-      username: [null, [Validators.required, Validators.minLength(8)]],
+      username: [null, [Validators.required, Validators.minLength(4)]],
       first_name: [null, [Validators.required]],
       last_name: [null, [Validators.required]],
-      middle_name: [null, [Validators.required]],
+      email: [null, [Validators.required]],
       phone: [null, [Validators.required]],
       bio: [null],
       github: [null],

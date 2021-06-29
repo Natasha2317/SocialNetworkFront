@@ -9,7 +9,7 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class ProfileService extends BaseService<Profile>{
-  protected url = 'api/v1/profile/1';
+  protected url = 'api/v1/profile';
 
   update(model: EditProfile, id?: number): Observable<EditProfile> {
     return this.http.put<EditProfile>(`${environment.url}/${this.url}/`, model);
