@@ -6,16 +6,16 @@
     <input class="single-field" type="text" formControlName="username" placeholder="username">
     <!--    form.get('username').invalid || -->
     <span class="field-error" *ngIf="form.get('username').touched ">
-      Please enter a valid username
+     Введите валидное имя пользователя
     </span>
   </div>
 
   <div class="registration">
     <input class="single-field" type="password" formControlName="password" placeholder="password">
     <span *ngIf="form.get('password').touched">
-      Please enter password
+      Введите пароль
     </span>
   </div>
 
-  <button class="btn" type="submit" [disabled]="form.invalid">Войти в IT</button>
+  <button class="btn" type="submit" [disabled]="form.invalid" (click)="onInput()">Войти</button>
 </form>

@@ -26,11 +26,22 @@ header {
 
 .side {
   grid-area: side;
-  background-color: #8c524a;
+  border: 2px solid #ca5d4f;
 }
-
+.side__menu{
+  list-style: none;
+  padding-bottom: 10px;
+}
 .content {
   grid-area: content;
   display: grid;
   grid-template: 1fr / repeat(3, 1fr);
 }
+.header-area__search{
+  margin-left: 10px;
+  color: aliceblue;
+}
+.header-area__search input{
+  color: white;
+}
+

@@ -1,14 +1,14 @@
 <h1>Добро пожаловать, {{userInfo.username}}</h1>
-<p>{{userInfo.first_name}}</p>
-<p>{{userInfo.last_name}}</p>
-<p>{{userInfo.email}}</p>
-<p>{{userInfo.date_joined}}</p>
-<p>{{userInfo.email}}</p>
+<p>Имя: {{userInfo.first_name}}</p>
+<p>Фамилия: {{userInfo.last_name}}</p>
+<p>Почта: {{userInfo.email}}</p>
+<p>Дата регистрации: {{userInfo.date_joined}}</p>
 <p>{{userInfo.first_login}}</p>
-<p>{{userInfo.phone}}</p>
-<p>{{userInfo.bio}}</p>
-<p>{{userInfo.github}}</p>
-<p>{{userInfo.birthday}}</p>
-<p>{{userInfo.gender}}</p>
-<p>{{userInfo.technology}}</p>
+<p>Телефон: {{userInfo.phone}}</p>
+<p>Обо мне: {{userInfo.bio}}</p>
+<p>Гитхаб: {{userInfo.github}}</p>
+<p>Дата рождения: {{userInfo.birthday}}</p>
+<p>Пол: {{userInfo.gender}}</p>
+<p>Технологии: {{userInfo.technology}}</p>
+<button class="btn" type="submit" (click)="onEdit()">Редактировать</button>
 

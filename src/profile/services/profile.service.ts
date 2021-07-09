@@ -3,7 +3,7 @@ import { BaseService } from '../../app/services/base-service';
 import { EditProfile, Profile } from '../models/profile';
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
-
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'

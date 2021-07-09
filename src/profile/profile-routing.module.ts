@@ -7,15 +7,19 @@ import {InfoProfileComponent} from './components/info-profile/info-profile.compo
 
 const routes: Routes = [
   {
-    path: 'profile', component: BaseLayoutComponent, children: [
+    path: 'profile', component: BaseLayoutComponent,
+    children: [
       {
-        path: '', component: InfoProfileComponent
+        path: '',
+        component: InfoProfileComponent
       },
       {
-        path: 'edit', component: EditProfileComponent
+        path: 'edit',
+        component: EditProfileComponent
       },
       {
-        path: 'wall', component: WallComponent
+        path: 'wall',
+        component: WallComponent
       }
     ]
   },

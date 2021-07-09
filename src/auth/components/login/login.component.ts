@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, Validators, FormGroup} from '@angular/forms';
-import {Subscription} from 'rxjs';
-import {AuthService} from '../../auth.service';
-import {Router} from '@angular/router';
+import { FormControl, Validators, FormGroup } from '@angular/forms';
+import { Subscription } from 'rxjs';
+import { AuthService } from '../../auth.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -40,6 +40,15 @@ export class LoginComponent implements OnInit {
       },
       error => this.errorRes = error
     );
+
   }
 
+
+  async onInput() {
+    try {
+      await this.router.navigate(['/profile']);
+    } catch (err) {
+      console.error(err);
+    }
+  }
 }
