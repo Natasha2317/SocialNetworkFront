@@ -21,6 +21,9 @@ export class BaseService<T> {
   get_list(id: number, params?: HttpParams): Observable<[T]> {
     return this.http.get<[T]>(`${environment.url}/${this.url}/${id}`, {params: params});
   }
+  get_follower(params?: HttpParams): Observable<[T]> {
+    return this.http.get<[T]>(`${environment.url}/${this.url}/`, {params: params});
+  }
 
   get_single(id: number): Observable<T> {
     return this.http.get<T>(`${environment.url}/${this.url}/${id}/`);
@@ -32,6 +35,10 @@ export class BaseService<T> {
 
   put(model: T, id?: number): Observable<T> {
     return this.http.put<T>(`${environment.url}/${this.url}/${id}/`, model);
+  }
+
+  getInfo(model: T, id: number): Observable<T> {
+    return this.http.get<T>(`${environment.url}/${this.url}/${id}/`, model);
   }
 
   delete(id: number): Observable<any> {

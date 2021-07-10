@@ -21,7 +21,7 @@ header {
   grid-area: header;
   display: grid;
   grid-template: 60px / 500px 100px 250px 100px;
-  background-color: #dc4734;
+  background-color: #f19d92;
 }
 
 .side {
@@ -44,4 +44,25 @@ header {
 .header-area__search input{
   color: white;
 }
-
+nav{
+  text-align: center;
+}
+@media print {
+  header{
+    display: none;
+  }
+  header > input{
+      display: none;
+    }
+  h2{
+    min-height: 1cm;
+    page-break-after: avoid;
+    margin-top: 0.5cm;
+  }
+  hr{
+    border-top: 1px solid black;
+  }
+  aside{
+    display: none;
+  }
+}

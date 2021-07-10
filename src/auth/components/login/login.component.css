@@ -11,19 +11,19 @@
 
 .login {
   grid-area: login;
-  background-color: #dc4734;
+  background-color: #f19d92;
   padding: 15px 30px;
 }
 
 .registration {
   grid-area: registration;
-  background-color: #dc4734;
+  background-color: #dd6656;
   padding: 15px 30px;
 }
 
 .btn{
   grid-area: btn;
-  background-color: #b8b8b8;
+  background-color: #d4d4d4;
   padding: 15px 30px;
 }
 

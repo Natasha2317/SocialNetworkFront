@@ -3,6 +3,7 @@ import { ProfileService } from '../../services/profile.service';
 import { Profile } from '../../models/profile';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-info-profile',
@@ -24,6 +25,7 @@ export class InfoProfileComponent implements OnInit {
       res => this.userInfo = res,
       error => console.log(error)
     );
+    console.log(this.userInfo)
   }
 
 

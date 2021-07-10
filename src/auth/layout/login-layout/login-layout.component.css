@@ -20,9 +20,8 @@
   justify-items: stretch;
 }
 
-.img-area {
-  grid-area: img;
-  background-image: url("../../../assets/img/angular-icon-1.svg");
+.image-area{
+  background-color: #f19d92;
 }
 
 .registration-area {

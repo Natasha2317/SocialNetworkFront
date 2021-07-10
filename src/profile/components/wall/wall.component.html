@@ -1,6 +1,7 @@
 <h2>Мои посты</h2>
-<section *ngFor="let post of postList; let i = index">
+<section *ngFor="let post of postList | myfilter : searchStr; let i = index">
   <small>{{post.user}}</small>
+  <p>{{post.title}}</p>
   <p>{{post.text}}</p>
   <small>{{post.create_date}}</small><br>
   <small>{{post.comments_count}}</small>

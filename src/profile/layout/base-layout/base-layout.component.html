@@ -1,16 +1,13 @@
 <section class="wrapper">
   <header class="header-area">
-    <div class="header-area__search">
-      <input type="text" placeholder="поиск">
-      <button type="button">S</button>
-    </div>
+    <input type="search" class="form-control" placeholder="Поиск" [(ngModel)]="searchStr"/>
   </header>
   <section class="main">
     <aside class="side">
         <nav>
           <ul class="side__menu">
             <li><a href="http://localhost:4200/profile">Моя страница</a></li>
-            <li><a>Мои Подписчики</a></li>
+            <li><a href="http://localhost:4200/profile/follower">Мои Подписчики</a></li>
             <li><a href="http://localhost:4200/profile/wall">Мои посты</a></li>
           </ul>
         </nav>

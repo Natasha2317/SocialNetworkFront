@@ -5,6 +5,7 @@ import { AuthService } from '../../auth.service';
 import { Router } from '@angular/router';
 
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -36,19 +37,11 @@ export class LoginComponent implements OnInit {
     this.aSub = this.authService.login(this.formData).subscribe(
       res => {
         console.log(res);
-        this.router.navigate(['/']);
+        this.router.navigate(['/profile']);
       },
       error => this.errorRes = error
     );
 
   }
 
-
-  async onInput() {
-    try {
-      await this.router.navigate(['/profile']);
-    } catch (err) {
-      console.error(err);
-    }
-  }
 }

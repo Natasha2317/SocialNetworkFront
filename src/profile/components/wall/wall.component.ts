@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {WallService} from '../../services/wall.service';
-import {Subscription} from 'rxjs';
+import { WallService } from '../../services/wall.service';
+import { Subscription } from 'rxjs';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-wall',
@@ -10,6 +12,7 @@ import {Subscription} from 'rxjs';
 export class WallComponent implements OnInit {
   postList: Array<any>;
   aSub: Subscription;
+  searchStr = '';
   constructor(private wallService: WallService) { }
 
   ngOnInit(): void {
