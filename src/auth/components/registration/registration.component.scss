@@ -1,0 +1,33 @@
+$var1: #f19d92;
+$var2: #999999;
+$var3: #ffffff;
+
+.create-acc {
+	color: $var1;
+	font-size: 30px;
+	font-weight: 800;
+	padding-bottom: 47px;
+}
+h2 {
+	text-align: center;
+}
+.single-field {
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid $var2;
+	padding: 5px 10px;
+	margin-bottom: 28px;
+}
+.submit-btn {
+	font-size: 16px;
+	font-weight: 500;
+	color: $var3;
+	line-height: 1;
+	padding: 15px 20px;
+	display: block;
+	border: 1px solid transparent;
+	background-color: $var1;
+	width: 100%;
+	margin-top: 23px;
+}
