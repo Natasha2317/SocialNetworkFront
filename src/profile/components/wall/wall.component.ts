@@ -20,7 +20,7 @@ export class WallComponent implements OnInit {
   }
 
   getPotsList(): void {
-    this.aSub = this.wallService.get_list(1).subscribe(
+    this.aSub = this.wallService.get_list(2).subscribe(
       res => this.postList = res,
       error => console.log(error)
     );

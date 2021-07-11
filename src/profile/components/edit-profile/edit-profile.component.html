@@ -2,14 +2,14 @@
   <h3 class="title">Редактирование профиля</h3>
   <form class="edit_profile_form" [formGroup]="form" (ngSubmit)="submit()">
     <input type="text" formControlName="username" placeholder="username">
-    <input type="text" formControlName="first_name" placeholder="first_name">
-    <input type="text" formControlName="last_name" placeholder="last_name">
-    <input type="text" formControlName="email" placeholder="email">
-    <input type="text" formControlName="phone" placeholder="phone">
-    <input type="text" formControlName="bio" placeholder="bio">
+    <input type="text" formControlName="first_name" placeholder="Имя">
+    <input type="text" formControlName="last_name" placeholder="Фамилия">
+    <input type="text" formControlName="email" placeholder="Почта">
+    <input type="text" formControlName="phone" placeholder="Телефон">
+    <input type="text" formControlName="bio" placeholder="О себе">
     <input type="text" formControlName="github" placeholder="github">
-    <input type="text" formControlName="birthday" placeholder="birthday">
-    <input type="text" formControlName="gender" placeholder="gender">
+    <input type="text" formControlName="birthday" placeholder="Дата рождения">
+    <input type="text" formControlName="gender" placeholder="Пол">
     <input type="text" formControlName="technology">
     <div class="buttons">
       <button class="button is-link is-small" type="submit">Обновить</button>
