@@ -13,8 +13,14 @@
   grid-area: header;
   align-items: center;
   justify-items: center;
+  text-align: center;
 }
-
+.header-area span{
+  color: #dd6656;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 0%;
+}
 .login-area {
   grid-area: login;
   justify-items: stretch;

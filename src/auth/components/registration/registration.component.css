@@ -4,7 +4,9 @@
     font-weight: 800;
     padding-bottom: 47px;
 }
-
+h2{
+    text-align: center;
+}
 .single-field {
     width: 100%;
     border: none;
