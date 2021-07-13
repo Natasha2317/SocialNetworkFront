@@ -9,6 +9,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InfoProfileComponent } from './components/info-profile/info-profile.component';
 import { MyfilterPipe } from '../profile/pipes/myfilter.pipe';
 import { FollowersComponent } from '../profile/components/followers/followers.component';
+import { EditWallComponent } from '../profile/components/edit-wall/edit-wall.component';
+
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { FollowersComponent } from '../profile/components/followers/followers.co
     BaseLayoutComponent,
     InfoProfileComponent,
     MyfilterPipe,
-    FollowersComponent
+    FollowersComponent,
+    EditWallComponent,
 
   ],
   imports: [

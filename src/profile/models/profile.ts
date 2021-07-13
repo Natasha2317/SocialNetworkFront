@@ -17,3 +17,7 @@ export class Profile extends EditProfile{
   date_joined: string;
   first_login: string;
 }
+export class EditWall {
+  title: string;
+  text: string;
+}

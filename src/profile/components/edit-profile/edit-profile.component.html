@@ -1,18 +1,35 @@
 <section class="edit_profile">
   <h3 class="title">Редактирование профиля</h3>
   <form class="edit_profile_form" [formGroup]="form" (ngSubmit)="submit()">
-    <input type="text" formControlName="username" placeholder="username">
-    <input type="text" formControlName="first_name" placeholder="Имя">
-    <input type="text" formControlName="last_name" placeholder="Фамилия">
-    <input type="text" formControlName="email" placeholder="Почта">
-    <input type="text" formControlName="phone" placeholder="Телефон">
-    <input type="text" formControlName="bio" placeholder="О себе">
-    <input type="text" formControlName="github" placeholder="github">
-    <input type="text" formControlName="birthday" placeholder="Дата рождения">
-    <input type="text" formControlName="gender" placeholder="Пол">
-    <input type="text" formControlName="technology">
+    <div class="input-group input-group-sm mb-3">
+      <input type="text" formControlName="username" class="form-control" placeholder="username" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div>
+      <input type="text" formControlName="first_name" class="form-control" placeholder="Имя" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div>
+      <input type="text" formControlName="last_name" class="form-control" placeholder="Фамилия" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div>
+      <input type="text" formControlName="email" class="form-control" placeholder="Почта" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div>
+      <input type="text" formControlName="phone" class="form-control" placeholder="Телефон" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div>
+      <input type="text" formControlName="bio" class="form-control" placeholder="О себе" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div>
+      <input type="text" formControlName="github" class="form-control" placeholder="github" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div>
+      <input type="text" formControlName="birthday" class="form-control" placeholder="Дата рождения" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div>
+      <input type="text" formControlName="gender" class="form-control" placeholder="Пол" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
     <div class="buttons">
-      <button class="button is-link is-small" type="submit">Обновить</button>
+      <button class="button is-link" type="submit">Обновить</button>
     </div>
   </form>
 </section>

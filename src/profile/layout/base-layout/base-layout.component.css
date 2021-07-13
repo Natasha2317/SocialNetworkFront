@@ -35,7 +35,7 @@ header {
 .content {
   grid-area: content;
   display: grid;
-  grid-template: 1fr / repeat(3, 1fr);
+  grid-template: 2fr / repeat(3, 1fr);
 }
 .header-area__search{
   margin-left: 10px;
@@ -46,6 +46,9 @@ header {
 }
 nav{
   text-align: center;
+}
+.nav-item{
+  border-bottom: 1px solid grey;
 }
 @media print {
   header{

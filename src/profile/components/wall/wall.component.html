@@ -1,10 +1,18 @@
 <h2>Мои посты</h2>
 <section *ngFor="let post of postList | myfilter : searchStr; let i = index">
-  <small>{{post.user}}</small>
-  <p>{{post.title}}</p>
-  <p>{{post.text}}</p>
-  <small>{{post.create_date}}</small><br>
-  <small>{{post.comments_count}}</small>
-  <hr>
+<div class="card">
+  <div class="card-header">
+    {{post.user}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{post.title}}</h5>
+    <p class="card-text">{{post.text}}</p>
+    <p class="card-text"><small>{{post.create_date}}</small></p>
+    <p class="card-text">Просмотры: <small>{{post.comments_count}}</small></p>
+    <div class="buttons">
+      <button class="button is-link" type="submit" (click)="onEdit()">Редактировать</button>
+    </div>
+  </div>
+</div>
 </section>
 

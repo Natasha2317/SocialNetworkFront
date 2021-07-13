@@ -14,7 +14,4 @@ export class ProfileService extends BaseService<Profile>{
   update(model: EditProfile, id?: number): Observable<EditProfile> {
     return this.http.put<EditProfile>(`${environment.url}/${this.url}/`, model);
   }
-  getInfo(model: Profile, id: number): Observable<Profile> {
-    return this.http.get<Profile>(`${environment.url}/${this.url}/${id}/`);
-  }
 }
